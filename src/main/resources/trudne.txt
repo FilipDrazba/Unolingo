@@ -1,0 +1,30 @@
+łuk;alphabet;tent;microphone;bow;1
+cień;water;earth;microphone;shadow;4
+ucieczka;water;earth;escape;jump;3
+więzienie;earth;prison;sausage;snoring;2
+chrapanie;earth;tent;laugh;snoring;4
+hulajnoga;humvee;tent;notebook;bike;1
+wykres;earth;tent;notebook;graph;4
+rak;earth;fish;pumpkin;crayfish;4
+tunel;pumpkin;tunnel;court;cabbage;2
+wykrywacz metalu;butter;bell;belt;metal detector;4
+kapusta;knife;tail;salat;cabbage;4
+miecz;alphabet;dinosaurs;tail;sword;4
+komin;dinosaurs;chimney;tail;piano;2
+kolejka;soldier;knife;court;queue;4
+barierka;butter;soldier;knife;railing;4
+sąd;alphabet;hammer;tail;court;4
+młotek;hail;song;soldier;hammer;4
+grad;mine;hail;snow;bed;2
+pilot;sun;remote control;butter;airport;2
+osioł;eeyore;horses;dinosaurs;donkey;4
+pranie;alphabet;wash;jumping;rock climbing;2
+wojna;sun;mine;horses;war;4
+zespół;bend;class;person;saw;1
+piła;saw;donkey;rain;space;1
+pociąg;train;subway;palace;plane;1
+metro;subway;hail;soldier;tail;1
+tusz do rzęs;mascara;eyeliner;lipstick;eyelash;1
+zalotka;lipstick;eyelash;mouth;ears;2
+paznokieć;lips;finger;nail;hair;3
+nerka;mobile;neckless;kidney;charger;3
