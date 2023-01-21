@@ -1,6 +1,5 @@
 package pl.edu.pb.wi.view;
 
-import pl.edu.pb.wi.model.question.OpenQuestion;
 import pl.edu.pb.wi.model.question.Question;
 
 import javax.swing.*;
@@ -10,8 +9,8 @@ import java.util.List;
 import static pl.edu.pb.wi.shared.Static.FONT;
 import static pl.edu.pb.wi.shared.Static.FONT_SIZE;
 
-public class OpenQuestionView extends JPanel {
-    public OpenQuestionView(List<Question> openQuestions) {
+public class OpenQuestionPanel extends JPanel {
+    public OpenQuestionPanel(List<Question> openQuestions) {
         super();
 
         setLayout(new GridLayout(5, 1, 10, 10));

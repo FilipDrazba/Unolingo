@@ -10,10 +10,10 @@ import java.awt.*;
 import static pl.edu.pb.wi.shared.Static.FONT;
 import static pl.edu.pb.wi.shared.Static.FONT_SIZE;
 
-public class BoardView extends MyJFrame {
+public class BoardFrame extends MyJFrame {
 
-    public BoardView(Integer amountOfDifficultyLevels,
-                     Integer amountOfLevelsInEachDifficultyLevel) {
+    public BoardFrame(Integer amountOfDifficultyLevels,
+                      Integer amountOfLevelsInEachDifficultyLevel) {
         super();
         setLayout(new GridLayout(amountOfDifficultyLevels * 2,
                 amountOfLevelsInEachDifficultyLevel, 10, 10));
@@ -34,7 +34,7 @@ public class BoardView extends MyJFrame {
                             (key.startsWith("1")
                                     ? ClosedQuestionFactory.getInstance(key)
                                     : OpenQuestionFactory.getInstance(key)));
-                    EventQueue.invokeLater(() -> new LevelView(level));
+                    EventQueue.invokeLater(() -> new LevelFrame(level));
                 });
             }
         }

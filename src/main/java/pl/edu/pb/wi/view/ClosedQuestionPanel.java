@@ -11,18 +11,18 @@ import java.util.List;
 import static pl.edu.pb.wi.shared.Static.FONT;
 import static pl.edu.pb.wi.shared.Static.FONT_SIZE;
 
-public class ClosedQuestionView extends JPanel {
+public class ClosedQuestionPanel extends JPanel {
     private final Iterator<Question> iterator;
 
     JLabel questionContent;
 
 
-    public ClosedQuestionView(List<Question> closedQuestions) {
+    public ClosedQuestionPanel(List<Question> closedQuestions) {
         super();
         iterator = closedQuestions.iterator();
         update((ClosedQuestion) iterator.next());
         JButton nextButton = new JButton("Next");
-        nextButton.addActionListener(e -> new ClosedQuestionView(closedQuestions));
+        nextButton.addActionListener(e -> new ClosedQuestionPanel(closedQuestions));
         add(nextButton);
     }
 

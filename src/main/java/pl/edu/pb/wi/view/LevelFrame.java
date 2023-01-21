@@ -1,22 +1,20 @@
 package pl.edu.pb.wi.view;
 
 import pl.edu.pb.wi.model.Level;
-import pl.edu.pb.wi.model.question.ClosedQuestion;
-import pl.edu.pb.wi.model.question.OpenQuestion;
 import pl.edu.pb.wi.model.question.Question;
 
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LevelView extends MyJFrame {
+public class LevelFrame extends MyJFrame {
 
     static JFrame f;
 
     // text areas
     static JTextArea t1, t2;
 
-    public LevelView(Level level) {
+    public LevelFrame(Level level) {
         super();
 
         f = new JFrame(level.getName());
@@ -30,8 +28,8 @@ public class LevelView extends MyJFrame {
         JPanel questionView;
 
         questionView = switch (questions.get(0).getQuestionType()) {
-            case OPEN -> new OpenQuestionView(questions);
-            case CLOSED -> new ClosedQuestionView(questions);
+            case OPEN -> new OpenQuestionPanel(questions);
+            case CLOSED -> new ClosedQuestionPanel(questions);
         };
 
 
