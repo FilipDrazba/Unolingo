@@ -30,11 +30,13 @@ public class BoardFrame extends MyJFrame {
 
                 button.addActionListener(e -> {
                     String key = button.getText();
-                    Level level = new Level(key,
-                            (key.startsWith("1")
-                                    ? ClosedQuestionFactory.getInstance(key)
-                                    : OpenQuestionFactory.getInstance(key)));
-                    EventQueue.invokeLater(() -> new LevelFrame(level));
+                    Level level;
+                    switch (key.substring(0, 1)) {
+                        case "1":
+                            level = new Level(key, ClosedQuestionFactory.getInstance(key));
+                            new ClosedQuestionFrame(level.getQuestions(), 0);
+                            break;
+                    }
                 });
             }
         }

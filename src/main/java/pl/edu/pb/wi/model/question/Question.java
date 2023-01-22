@@ -10,7 +10,8 @@ import pl.edu.pb.wi.model.Prototype;
 public abstract class Question implements Prototype {
     protected QuestionType questionType;
     protected String content;
-    protected Boolean pointAwarded;
+    protected boolean pointAwarded;
+    protected boolean cloned=false;
 
     public String getContent() {
         return content;

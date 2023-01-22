@@ -12,21 +12,34 @@ public class ClosedQuestion extends Question {
 
     @Override
     public boolean checkAnswer(Object givenAnswer) {
-        return correctAnswer.equals(givenAnswer);
+        if (correctAnswer.equals(givenAnswer)) {
+            pointAwarded = true;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
-    public Integer getPoint() {
-        return null;
+    public Double getPoint() {
+        if (pointAwarded) {
+            if (cloned)
+                return 0.5;
+            else
+                return 1d;
+        } else
+            return 0d;
     }
 
     @Override
     public Prototype clone() {
-        return null;
+        ClosedQuestion clone = new ClosedQuestion(content, correctAnswer, answers);//shallow copy
+        clone.cloned = true;
+        return clone;
     }
 
     public ClosedQuestion(String content, Integer correctAnswer, List<String> answers) {
-        super("Przetłumacz \""+content+"\" na język angielski:", QuestionType.CLOSED);
+        super(content, QuestionType.CLOSED);
         this.correctAnswer = correctAnswer;
         this.answers = answers;
     }
