@@ -21,7 +21,7 @@ public class ClosedQuestion extends Question {
     }
 
     @Override
-    public Double getPoint() {
+    public double getPoint() {
         if (pointAwarded) {
             if (cloned)
                 return 0.5;

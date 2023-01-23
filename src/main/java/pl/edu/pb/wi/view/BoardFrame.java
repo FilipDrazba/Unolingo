@@ -36,6 +36,11 @@ public class BoardFrame extends MyJFrame {
                             level = new Level(key, ClosedQuestionFactory.getInstance(key));
                             new ClosedQuestionFrame(level.getQuestions(), 0);
                             break;
+
+                        case "2":
+                            level = new Level(key, OpenQuestionFactory.getInstance(key));
+                            new OpenQuestionFrame(level.getQuestions(),0);
+                            break;
                     }
                 });
             }
